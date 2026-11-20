@@ -296,6 +296,13 @@ function renderQuestion() {
     button.addEventListener("click", () => answer(index));
     els.answers.append(button);
   });
+
+  // Only fetch the upcoming photo, instead of the whole album at startup.
+  const upcoming = deck[current + 1];
+  if (upcoming) {
+    const preload = new Image();
+    preload.src = upcoming.image;
+  }
 }
 
 function updateScore() {
@@ -421,12 +428,6 @@ async function shareScore() {
       : text;
   }
 }
-
-// Warm the browser cache so photos appear instantly between questions.
-QUESTIONS.forEach((question) => {
-  const image = new Image();
-  image.src = question.image;
-});
 
 document.querySelectorAll(".mode-button").forEach((button) => {
   button.addEventListener("click", () => startGame(Number(button.dataset.count)));
