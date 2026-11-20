@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Test your knowledge of oranges, yuzus, pomelos, kumquats and more in the Citrus Quiz."
+    />
+    <meta name="theme-color" content="#ffb703" />
+    <title>Citrus Quiz — How juicy is your knowledge?</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scenery" aria-hidden="true">
+      <span class="slice slice-1">🍋</span>
+      <span class="slice slice-2">🍊</span>
+      <span class="slice slice-3">🍋</span>
+      <span class="slice slice-4">🍊</span>
+      <span class="slice slice-5">🍋</span>
+    </div>
+
+    <main class="app">
+      <header class="hero">
+        <div class="badge"><span aria-hidden="true">✨</span> Freshly squeezed trivia</div>
+        <h1>The <span>Citrus</span> Quiz</h1>
+        <p>Oranges, yuzus, kumquats &amp; kin. Think you know your citrus?</p>
+      </header>
+
+      <!-- Start screen -->
+      <section id="start-screen" class="screen">
+        <div class="card start-card">
+          <div class="card-illustration" aria-hidden="true">🍊🍋🍋‍🟩</div>
+          <h2>Pick your challenge</h2>
+          <p class="muted">
+            Every round is shuffled, and every answer comes with a little fruity fact.
+          </p>
+          <div class="mode-list">
+            <button class="mode-button" data-count="5">
+              <span class="mode-icon" aria-hidden="true">🍋</span>
+              <span class="mode-copy">
+                <strong>Quick squeeze</strong>
+                <small>5 questions · about a minute</small>
+              </span>
+              <span class="mode-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="mode-button" data-count="15">
+              <span class="mode-icon" aria-hidden="true">🍊</span>
+              <span class="mode-copy">
+                <strong>Full grove</strong>
+                <small>15 questions · the whole orchard</small>
+              </span>
+              <span class="mode-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+          <p class="hint">Tip: press <kbd>1</kbd>–<kbd>4</kbd> to answer with your keyboard.</p>
+        </div>
+      </section>
+
+      <!-- Quiz screen -->
+      <section id="quiz-screen" class="screen hidden">
+        <div class="progress-head">
+          <span id="question-count">Question 1 of 5</span>
+          <span id="score-inline">0 correct</span>
+        </div>
+        <div class="progress-track" role="presentation">
+          <div id="progress-bar"></div>
+        </div>
+
+        <div class="card question-card">
+          <div id="fruit-emoji" class="fruit-emoji" aria-hidden="true">🍊</div>
+          <p id="question-label" class="question-label">Which citrus am I?</p>
+          <h2 id="question-text">Loading...</h2>
+
+          <div id="answers" class="answers"></div>
+
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+          <button id="next-button" class="primary-button hidden">
+            Next question <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Results screen -->
+      <section id="result-screen" class="screen hidden">
+        <div class="card result-card">
+          <div id="result-emoji" class="result-emoji" aria-hidden="true">🍊</div>
+          <p class="question-label">Your citrus score</p>
+          <div class="score-display">
+            <span id="final-score">0</span><span class="score-total" id="final-total">/ 5</span>
+          </div>
+          <h2 id="result-title">Fresh!</h2>
+          <p id="result-message" class="muted"></p>
+          <div id="result-stats" class="result-stats"></div>
+          <div class="result-actions">
+            <button id="play-again" class="primary-button">Play again <span aria-hidden="true">↻</span></button>
+            <button id="share-button" class="secondary-button">Copy my score</button>
+          </div>
+          <p id="share-status" class="share-status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <footer>Made for citrus enthusiasts · <span aria-hidden="true">🍋</span> no fruit was harmed</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
