@@ -2,7 +2,9 @@
 
 A tiny, dependency-free quiz about citrus fruits — oranges, yuzus, pomelos, kumquats, finger limes and more.
 
-Pick a 5-question "Quick squeeze" or a 15-question "Full grove". Questions are shuffled every round, answers come with a fun fact, and a scoreboard tracks accuracy and best streak.
+Pick a 5-question "Quick squeeze" or a 15-question "Full grove". Questions are shuffled every round, each one shows a photo of the fruit, answers come with a fun fact, and a scoreboard tracks accuracy and best streak.
+
+Photos are sourced from Wikimedia Commons under CC BY / CC BY-SA / public domain licenses. Per-image credits and links are listed in the "Photo credits" section at the bottom of the quiz.
 
 ## Run locally
 

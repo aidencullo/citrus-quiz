@@ -40,7 +40,11 @@
       <!-- Start screen -->
       <section id="start-screen" class="screen">
         <div class="card start-card">
-          <div class="card-illustration" aria-hidden="true">🍊🍋🍋‍🟩</div>
+          <div class="start-photos" aria-hidden="true">
+            <img src="images/orange.jpg" alt="" />
+            <img src="images/yuzu.jpg" alt="" />
+            <img src="images/pomelo.jpg" alt="" />
+          </div>
           <h2>Pick your challenge</h2>
           <p class="muted">
             Every round is shuffled, and every answer comes with a little fruity fact.
@@ -78,7 +82,9 @@
         </div>
 
         <div class="card question-card">
-          <div id="fruit-emoji" class="fruit-emoji" aria-hidden="true">🍊</div>
+          <div class="fruit-photo-wrap">
+            <img id="fruit-photo" class="fruit-photo" src="images/kumquat.jpg" alt="Fresh kumquats" />
+          </div>
           <p id="question-label" class="question-label">Which citrus am I?</p>
           <h2 id="question-text">Loading...</h2>
 
@@ -110,6 +116,31 @@
         </div>
       </section>
 
+      <details class="credits">
+        <summary>Photo credits</summary>
+        <p>Fruit photos from Wikimedia Commons. Images are resized but otherwise unchanged.</p>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Kumquat_from_Spain.jpg" target="_blank" rel="noopener noreferrer">Kumquat from Spain.jpg</a> — Ivar Leidus · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Citrus_bergamia_-_Bergamot.jpg" target="_blank" rel="noopener noreferrer">Citrus bergamia - Bergamot.jpg</a> — James Steakley · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Pomelo_fruit.jpg" target="_blank" rel="noopener noreferrer">Pomelo fruit.jpg</a> — Ivar Leidus · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Citrus_australasica_-_Australian_finger_lime.jpg" target="_blank" rel="noopener noreferrer">Citrus australasica - Australian finger lime.jpg</a> — Amada44 · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Yuzufruit.jpg" target="_blank" rel="noopener noreferrer">Yuzufruit.jpg</a> — Nagarazoku from TOKYO, Japan · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Grapefruits_-_whole-halved-segments.jpg" target="_blank" rel="noopener noreferrer">Grapefruits - whole-halved-segments.jpg</a> — Ivar Leidus · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Clementines_whole,_peeled,_half_and_sectioned.jpg" target="_blank" rel="noopener noreferrer">Clementines whole, peeled, half and sectioned.jpg</a> — carol · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:MeyerLemon.jpg" target="_blank" rel="noopener noreferrer">MeyerLemon.jpg</a> — Jon Sullivan of PD Photo.org, edited by User:Fir0002 · <a href="https://commons.wikimedia.org/wiki/Template:PD" target="_blank" rel="noopener noreferrer">Public domain</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Citrofortunella_microcarpa_2zz.jpg" target="_blank" rel="noopener noreferrer">Citrofortunella microcarpa 2zz.jpg</a> — Photo by David J. Stang · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Citrus_medica_var_sarcodactylis_-_Buddha%27s_hand.jpg" target="_blank" rel="noopener noreferrer">Citrus medica var sarcodactylis - Buddha&#x27;s hand.jpg</a> — James Steakley · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Cara_cara_orange_cut_in_half.JPG" target="_blank" rel="noopener noreferrer">Cara cara orange cut in half.JPG</a> — user:WLU · <a href="https://commons.wikimedia.org/wiki/Template:PD" target="_blank" rel="noopener noreferrer">Public domain</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Blood_orange_slice.jpg" target="_blank" rel="noopener noreferrer">Blood orange slice.jpg</a> — Rhododendrites · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Ugli_Fruit.jpg" target="_blank" rel="noopener noreferrer">Ugli Fruit.jpg</a> — Rabensteiner · <a href="https://commons.wikimedia.org/wiki/Template:PD" target="_blank" rel="noopener noreferrer">Public domain</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Citrus_medica_%27Ethrog%27_-_Etrog_citron.jpg" target="_blank" rel="noopener noreferrer">Citrus medica &#x27;Ethrog&#x27; - Etrog citron.jpg</a> — James Steakley · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Shukoranges.jpg" target="_blank" rel="noopener noreferrer">Shukoranges.jpg</a> — Original uploader was Hmbr at he.wikipedia · <a href="https://commons.wikimedia.org/wiki/Commons:Licensing" target="_blank" rel="noopener noreferrer">CC BY 2.5</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Navel_orange_sectioned.jpg" target="_blank" rel="noopener noreferrer">Navel orange sectioned.jpg</a> — The original uploader was Allentchang at English Wikipedia. · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg" target="_blank" rel="noopener noreferrer">Oranges - whole-halved-segment.jpg</a> — Ivar Leidus · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Citrus_%C3%97_aurantiifolia.jpg" target="_blank" rel="noopener noreferrer">Citrus × aurantiifolia.jpg</a> — Boesenbergia · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Oroblanco_(sweetie)_fruits.jpg" target="_blank" rel="noopener noreferrer">Oroblanco (sweetie) fruits.jpg</a> — Ivar Leidus · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></li>
+        </ul>
+      </details>
       <footer>Made for citrus enthusiasts · <span aria-hidden="true">🍋</span> no fruit was harmed</footer>
     </main>
 

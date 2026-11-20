@@ -1,6 +1,8 @@
 const QUESTIONS = [
   {
     emoji: "🍊",
+    image: "images/kumquat.jpg",
+    alt: "Fresh kumquats",
     label: "Which citrus am I?",
     text: "I'm small and oval. You can eat me peel and all — my peel is sweet and my flesh is tart.",
     options: ["Kumquat", "Key lime", "Clementine", "Bergamot"],
@@ -9,6 +11,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍐",
+    image: "images/bergamot.jpg",
+    alt: "Bergamot oranges",
     label: "Flavor detective",
     text: "This pear-shaped, intensely fragrant citrus gives Earl Grey tea its signature flavor.",
     options: ["Yuzu", "Bergamot", "Citron", "Pomelo"],
@@ -17,6 +21,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/pomelo.jpg",
+    alt: "Pomelo fruit",
     label: "Which citrus am I?",
     text: "I'm the largest citrus fruit, with a thick spongy rind and mild, sweet flesh.",
     options: ["Grapefruit", "Citron", "Pomelo", "Navel orange"],
@@ -25,6 +31,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍋",
+    image: "images/finger-lime.jpg",
+    alt: "Australian finger limes",
     label: "Which citrus am I?",
     text: "My juice looks like tiny pearls that burst in your mouth — a favorite in modern Australian cooking.",
     options: ["Finger lime", "Blood lime", "Key lime", "Calamansi"],
@@ -33,6 +41,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍋",
+    image: "images/yuzu.jpg",
+    alt: "Yuzu fruit",
     label: "Which citrus am I?",
     text: "I'm knobbly and yellow, wildly aromatic, and a splash of my juice is essential to Japanese ponzu sauce.",
     options: ["Meyer lemon", "Yuzu", "Bitter orange", "Tangelo"],
@@ -41,6 +51,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/grapefruit.jpg",
+    alt: "Grapefruits, whole and halved",
     label: "True or false?",
     text: "A grapefruit is a natural hybrid of a sweet orange and a pomelo.",
     options: ["True", "False"],
@@ -49,6 +61,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/clementine.jpg",
+    alt: "Clementines",
     label: "Which citrus am I?",
     text: "I'm a seedless mandarin–sweet orange hybrid, easy to peel, sweet, and a classic lunchbox fruit.",
     options: ["Clementine", "Seville orange", "Citron", "Ugli fruit"],
@@ -57,6 +71,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍋",
+    image: "images/meyer-lemon.jpg",
+    alt: "Meyer lemon",
     label: "Which citrus am I?",
     text: "I'm a sweeter, thinner-skinned cross between a lemon and a mandarin, beloved by chefs for baking.",
     options: ["Eureka lemon", "Meyer lemon", "Key lime", "Lisbon lemon"],
@@ -65,6 +81,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍋",
+    image: "images/meyer-lemon.jpg",
+    alt: "Meyer lemon peel and zest",
     label: "True or false?",
     text: "The colorful outer part of citrus peel that you zest is the pith — the white, bitter layer.",
     options: ["True", "False"],
@@ -73,6 +91,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍋",
+    image: "images/calamansi.jpg",
+    alt: "Calamansi fruit",
     label: "Which citrus am I?",
     text: "I'm a tiny Filipino citrus, a mandarin–kumquat hybrid, essential to dipping sauces and a popular pancake topping.",
     options: ["Calamansi", "Yuzu", "Kumquat", "Bergamot"],
@@ -81,6 +101,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🖐️",
+    image: "images/buddhas-hand.jpg",
+    alt: "Buddha's hand citron",
     label: "Which citrus am I?",
     text: "I have long, finger-like segments, almost no pulp or juice, and I'm a variety of citron.",
     options: ["Buddha's hand", "Finger lime", "Yuzu", "Pomelo"],
@@ -89,6 +111,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/cara-cara.jpg",
+    alt: "Cara Cara orange cut in half",
     label: "Which citrus am I?",
     text: "I'm a pink-fleshed navel orange whose color comes from lycopene — the same pigment in tomatoes.",
     options: ["Moro", "Cara Cara", "Tarocco", "Sanguinello"],
@@ -97,6 +121,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/blood-orange.jpg",
+    alt: "Blood orange slice",
     label: "Citrus science",
     text: "What gives blood oranges their crimson flesh?",
     options: ["Chlorophyll", "Lycopene", "Anthocyanin pigments", "Caramelized sugars"],
@@ -105,6 +131,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/ugli.jpg",
+    alt: "Ugli fruit",
     label: "Which citrus am I?",
     text: "I'm a lumpy-looking Jamaican hybrid of grapefruit, orange and mandarin. My name literally means 'ugly'.",
     options: ["Oroblanco", "Tangelo", "Ugli fruit", "Shamouti"],
@@ -113,6 +141,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍋",
+    image: "images/etrog.jpg",
+    alt: "Etrog citron",
     label: "Which citrus am I?",
     text: "I'm a gnarled, fragrant citron used as the etrog during the Jewish festival of Sukkot.",
     options: ["Etrog (citron)", "Pomelo", "Seville orange", "Kumquat"],
@@ -121,6 +151,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/jaffa-orange.jpg",
+    alt: "Oranges at a market in Israel",
     label: "Which citrus am I?",
     text: "I was developed in Israel, have a thick easy-to-peel rind and almost no seeds, and I'm famous as the Jaffa orange.",
     options: ["Shamouti", "Navel", "Valencia", "Blood orange"],
@@ -129,6 +161,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/navel-orange.jpg",
+    alt: "Navel orange, sectioned",
     label: "Citrus science",
     text: "Where does a navel orange get its name?",
     options: [
@@ -142,6 +176,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/orange.jpg",
+    alt: "Oranges, whole and halved",
     label: "Citrus science",
     text: "The sweet orange started as a natural hybrid of which two citrus fruits?",
     options: ["Lemon and lime", "Mandarin and pomelo", "Grapefruit and kumquat", "Citron and yuzu"],
@@ -150,6 +186,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍋",
+    image: "images/key-lime.jpg",
+    alt: "Key limes",
     label: "True or false?",
     text: "Key limes are typically smaller, rounder and more acidic than the Persian limes found in most supermarkets.",
     options: ["True", "False"],
@@ -158,6 +196,8 @@ const QUESTIONS = [
   },
   {
     emoji: "🍊",
+    image: "images/oroblanco.jpg",
+    alt: "Oroblanco (sweetie) fruits",
     label: "Which citrus am I?",
     text: "I'm a sweet, seedless grapefruit–pomelo hybrid once marketed under the nickname 'Sweetie'.",
     options: ["Tangelo", "Oroblanco", "Ugli fruit", "Meyer lemon"],
@@ -173,7 +213,7 @@ const els = {
   questionCount: document.getElementById("question-count"),
   scoreInline: document.getElementById("score-inline"),
   progressBar: document.getElementById("progress-bar"),
-  fruitEmoji: document.getElementById("fruit-emoji"),
+  fruitPhoto: document.getElementById("fruit-photo"),
   questionLabel: document.getElementById("question-label"),
   questionText: document.getElementById("question-text"),
   answers: document.getElementById("answers"),
@@ -229,7 +269,8 @@ function renderQuestion() {
 
   els.questionCount.textContent = `Question ${current + 1} of ${deck.length}`;
   els.progressBar.style.width = `${(current / deck.length) * 100}%`;
-  els.fruitEmoji.textContent = q.emoji;
+  els.fruitPhoto.src = q.image;
+  els.fruitPhoto.alt = q.alt;
   els.questionLabel.textContent = q.label;
   els.questionText.textContent = q.text;
   els.answers.replaceChildren();
@@ -380,6 +421,12 @@ async function shareScore() {
       : text;
   }
 }
+
+// Warm the browser cache so photos appear instantly between questions.
+QUESTIONS.forEach((question) => {
+  const image = new Image();
+  image.src = question.image;
+});
 
 document.querySelectorAll(".mode-button").forEach((button) => {
   button.addEventListener("click", () => startGame(Number(button.dataset.count)));
