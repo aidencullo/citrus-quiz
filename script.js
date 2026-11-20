@@ -332,7 +332,7 @@ function showResults() {
   } else {
     emoji = "🫒";
     title = "Time to hit the grove";
-    message = "Not your juiciest round. The good news: you learned 15 fruity facts along the way.";
+    message = `Not your juiciest round. The good news: you picked up ${deck.length} fruity facts along the way.`;
   }
 
   els.resultEmoji.textContent = emoji;
